@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Maria Eduarda de Sousa Nogueira | Desenvolvedora Frontend</title>
+
+    <!-- FONT AWESOME - ICONES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- DEVICONS - ICONES-->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
+    <!-- FONTES PERSONALIZADAS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    
+    <!-- RESET DO CSS PADRÃO -->
+    <link rel="stylesheet" href="src/css/reset.css">
+
+    <!-- ESTILO CSS PERSONALIZADO -->
+    <link rel="stylesheet" href="src/css/estilo.css">
+
+    <!-- CSS HABILIDADES -->
+    <link rel="stylesheet" href="src/css/habilidades.css">
+
+    <!-- CSS OBJETIVOS -->
+    <link rel="stylesheet" href="src/css/objetivos.css">
+
+    <!-- CSS PROJETOS -->
+    <link rel="stylesheet" href="src/css/projetos.css">
+
+    <!-- CSS CONTATO -->
+    <link rel="stylesheet" href="src/css/contato.css">
+
+    <!-- CSS RODAPÉ (FOOTER) -->
+    <link rel="stylesheet" href="src/css/footer.css">
+
+    <!-- RESPONSIVIDADE (LAYOUT RESPONSIVO)-->
+    <link rel="stylesheet" href="src/css/responsivo.css">
+
+    <!-- FAVICON PORTFOLIO -->
+    <link rel="icon" href="src/Imagens/favicon.png" type="ico">
+
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+    
+        <a href="#">
+            <h1 class="logo">ME</h1>
+        </a>
+
+        <nav>
+        <div class="menu" id="navbarNav">
+            <ul class="nav_menu_list">
+                <li class="nav_list"><a class="menu-ativo" href="#home">Home</a></li>
+                <li class="nav_list"><a href="#habilidades">Habilidades</a></li>
+                <li class="nav_list"><a href="#projetos">Meus projetos</a></li>
+                <li class="nav_list"><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-menu-btn" onclick="myMenuFunction()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        </nav>
+    </header>
+    
+    <!-- SEÇÃO HOME -->
+    <section id="home" class="home">
+
+        <div class="informacoes">
+            <h1>Olá! Sou Maria Eduarda</h1>
+            <p>Uma desenvolvedora frontend em formação apaixonada por tecnologia.</p>
+            <p>Estou sempre me desafiando com novos projetos e buscando feedback na comunidade de programação, além de compartilhar meus conhecimentos. 😁</p>
+            <p>Ah, também sou fã de jogos, filmes, séries e animes. 💕💕</p>
+
+            <span class="big-circle"></span>
+
+            <span class="circle one"></span>
+            
+            <span class="circle two"></span>
+
+            <!-- ICONES REDES SOCIAIS -->
+            <ul class="redes-sociais">
+                <li>
+                    <a class="social-instagram" href="#" title="Ir para o Instagram" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="social-linkedin" href="#" title="Ir para o LinkedIn" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="social-whatsapp" href="#" title="Enviar mensagem no WhatsApp" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="social-youtube" href="#" title="Ir para o Youtube" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- FOTO PARA PORTFOLIO -->
+        <div class="container-foto">
+            <div class="foto sombra-interna">
+                <img src="./src/Imagens/dudinhadiminuir.png" alt="foto de perfil da Kimi Mattos">
+            </div>
+        </div>
+
+    </section> <!-- FIM SEÇÃO HOME -->
+
+    <div class="container-habilidades">  <!-- SEÇÃO HABILIDADES -->
+        
+       
+        <section class="habilidades" id="habilidades">
+
+            <h2 class="titulo">Habilidades</h2>
+
+            <p class="subtitulo">Clique em algum ícone para saber mais</p> <!-- Frase informativa -->
+
+            <div class="container-skills">
+
+                <div class="icons" data-info="HTML5">
+                    <i class="devicon-html5-plain-wordmark"></i>
+                </div>
+                
+                <div class="icons" data-info="CSS3">
+                    <i class="devicon-css3-plain-wordmark"></i>
+                </div>
+                
+                <div class="icons" data-info="BOOTSTRAP">
+                    <i class="devicon-bootstrap-plain-wordmark"></i>
+                </div>
+                
+                <div class="icons" data-info="JAVASCRIPT">
+                    <i class="devicon-javascript-plain"></i>
+                </div>
+                
+                <div class="icons-opac" data-info="REACT">
+                    <i class="devicon-react-original-wordmark"></i>
+                </div>
+                
+                <div class="icons-opac" data-info="TYPESCRIPT">
+                    <i class="devicon-typescript-plain"></i>
+                </div>
+                
+                <div class="icons-opac" data-info="NODEJS">
+                    <i class="devicon-nodejs-plain-wordmark"></i>
+                </div>
+                
+                <!-- BALÃO DE FALA ICONES -->
+                <div class="speech-bubble" id="speech-bubble"></div>
+
+                <!-- BALÃO DE FALA ICONES-OPAC -->
+                <div class="speech-bubble-opac" id="speech-bubble-opac"></div>
+                    
+            </div>
+
+        </section> <!-- FIM SEÇÃO HABILIDADES -->
+
+           
+        <section id="objetivos" class="objetivos"> <!-- SEÇÃO OBJETIVOS -->
+            <h2 class="titulo">Objetivos</h2>
+
+            <div class="container-objetivos">
+
+                <div class="accordion">
+
+                    <div class="accordion-bg">
+                        <div class="accordion-header">
+                            O que você almeja ser como uma profissional?
+                            <i class="fa-solid fa-circle-plus"></i>
+                        </div>
+
+                        <div class="accordion-conteudo">
+                                <p>
+                                    Tenho como objetivo me tornar uma programadora full stack, dominando diversas linguagens e tecnologias. Quero estar preparada para enfrentar desafios e contribuir para projetos complexos em diferentes áreas.
+                                </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-bg">
+                        <div class="accordion-header">
+                            Você se considera alguém que trabalha bem em equipe?
+                            <i class="fa-solid fa-circle-plus"></i>
+                        </div>
+                        <div class="accordion-conteudo">
+                                <p>
+                                    Sim, embora a timidez possa ser um obstáculo, estou determinada a superá-la para contribuir de forma eficaz em projetos colaborativos. Tenho habilidades de comunicação e capacidade de lidar com diferentes opiniões, o que me torna apta a trabalhar em equipe de forma produtiva.
+                                </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-bg">
+                        <div class="accordion-header">
+                            Como você decidiu ser uma programadora?
+                            <i class="fa-solid fa-circle-plus"></i>
+                        </div>
+                        <div class="accordion-conteudo">
+                                <p>
+                                    Minha paixão pela programação começou na infância, aos 10 anos, quando desenvolvia conteúdo para um jogo online. Após cursar Publicidade e Propaganda na faculdade, percebi que poderia unir minha criatividade ao desenvolvimento de projetos digitais, o que me motivou a buscar a profissão de programadora.
+                                </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-bg">
+                        <div class="accordion-header">
+                            O que eu quero como programadora?
+                            <i class="fa-solid fa-circle-plus"></i>
+                        </div>
+                        <div class="accordion-conteudo">
+                                <p>
+                                    Busco mais qualidade de vida e equilíbrio entre trabalho e lazer. Além disso, desejo desenvolver soluções inovadoras que impactem positivamente a vida das pessoas.
+                                </p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+        </section> <!-- FIM SEÇÃO OBJETIVOS -->
+        
+    </div> <!-- FIM DO CONTAINER HABILIDADES/OBJETIVOS -->
+
+    <!-- SEÇÃO PROJETOS -->
+    <section id="projetos" class="projetos">
+
+        <h2 class="titulo">Meus projetos</h2>
+
+        <div class="container-projetos">
+            <div class="projeto ativo">
+                <a href="#projeto1" target="_blank">
+                    <img src="./src/Imagens/projeto-gta.png" alt="Projeto Landing Page GTA">
+                    <h3>Projeto GTA</h3>
+
+                    <div class="informacoes-projeto">
+                        <p>Projeto feito usando HTML, CSS e Javascript</p>
+
+                        <p>🧷 Ver no GitHub Pages</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="projeto ativo">
+                <a href="#projeto2" target="_blank">
+                    <img src="./src/Imagens/projeto-listagem-pokemon.png" alt="Projeto Landing Page Listagem Pokémon">
+                    <h3>Projeto Listagem Pokémon</h3>
+    
+                    <div class="informacoes-projeto">
+                        <p>Projeto feito usando HTML, CSS e Javascript</p>
+    
+                        <p>🧷 Ver no GitHub Pages</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="projeto ativo">
+                <a href="#projeto3" target="_blank">
+                    <img src="./src/Imagens/projeto-one-piece.png" alt="Projeto Landing Page One Piece">
+                    <h3>Projeto One Piece</h3>
+    
+                    <div class="informacoes-projeto">
+                        <p>Projeto feito usando HTML, CSS e Javascript</p>
+    
+                        <p>🧷 Ver no GitHub Pages</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="projeto ativo">
+                <a href="#projeto4" target="_blank">
+                    <img src="./src/Imagens/projeto-x-men.png" alt="Projeto Landing Page X-MEN">
+                    <h3>Projeto X-MEN</h3>
+    
+                    <div class="informacoes-projeto">
+                        <p>Projeto feito usando HTML, CSS e Javascript</p>
+    
+                        <p>🧷 Ver no GitHub Pages</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="projeto">
+                <a href="#projeto5" target="_blank">
+                    <img src="https://via.placeholder.com/515x700.png/0062ff/ffffff?Text=515x700" alt="Projeto Landing Page X-MEN">
+                    <h3>Projeto 5</h3>
+    
+                    <div class="informacoes-projeto">
+                        <p>Projeto feito usando HTML, CSS e Javascript</p>
+    
+                        <p>🧷 Ver no GitHub Pages</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="projeto">
+                <a href="#projeto6" target="_blank">
+                    <img src="https://via.placeholder.com/515x700.png/0062ff/ffffff?Text=515x700" alt="Projeto Landing Page X-MEN">
+                    <h3>Projeto 6</h3>
+    
+                    <div class="informacoes-projeto">
+                        <p>Projeto feito usando HTML, CSS e Javascript</p>
+    
+                        <p>🧷 Ver no GitHub Pages</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="projeto">
+                <a href="#projeto7" target="_blank">
+                    <img src="https://via.placeholder.com/515x700.png/0062ff/ffffff?Text=515x700" alt="Projeto Landing Page X-MEN">
+                    <h3>Projeto 7</h3>
+    
+                    <div class="informacoes-projeto">
+                        <p>Projeto feito usando HTML, CSS e Javascript</p>
+    
+                        <p>🧷 Ver no GitHub Pages</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="projeto">
+                <a href="#projeto8" target="_blank">
+                    <img src="https://via.placeholder.com/515x700.png/0062ff/ffffff?Text=515x700" alt="Projeto Landing Page X-MEN">
+                    <h3>Projeto 8</h3>
+    
+                    <div class="informacoes-projeto">
+                        <p>Projeto feito usando HTML, CSS e Javascript</p>
+    
+                        <p>🧷 Ver no GitHub Pages</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <button class="btn-mostrar-projetos">Mostrar mais</button>
+
+    </section> <!-- FIM SEÇÃO PROJETOS -->
+
+   <!-- SEÇÃO CONTATO -->
+    <section class="contato" id="contato">
+        <h2 class="titulo">CONTATO</h2>
+
+        <div class="container-contato">
+            <span class="big-circle"></span>
+            <div class="form">
+              <div class="contact-info">
+                <h3>Vamos entrar em contato</h3>
+                <p>
+                    Quero muito saber sua opinião! Seja para trocar ideias sobre possíveis colaborações ou para compartilhar suas impressões sobre este portfólio, estou aqui para ouvir você. Sinta-se à vontade para entrar em contato para uma conversa produtiva ou deixar seu feedback. Estou ansioso para receber suas contribuições e sugestões para tornar este trabalho ainda melhor.
+                </p>
+
+                <br>
+      
+                <div class="info">
+                  <div class="information">
+                    <i class="fa-regular fa-envelope icone"></i>
+                    <p class="dados-email">rafinha_matos5@hotmail.com</p>
+                    <button class="btn-email copy-email" onclick="copiarEmail()">
+                        Copiar E-mail <i class="fas fa-copy"></i>
+                    </button>
+                  </div>
+                  <div class="information">
+                    <i class="fa-sharp fa-solid fa-phone-volume icone"></i>
+                    <p class="dados-contato">11 99687-2933</p>
+                  </div>
+                </div>
+      
+                <div class="social-media">
+                  <p>Entre em contato também através de:</p>
+                  <div class="redes-sociais">
+                    <a href="#" title="Enviar mensagem no WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="#" title="Ir para o LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" title="Ir para o Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="contact-form">
+                <span class="circle one"></span>
+                <span class="circle two"></span>
+      
+                <form action="index.html" autocomplete="off">
+                  <h3>Entre em contato</h3>
+                  <div class="input-container">
+                    <input type="text" name="name" class="input" />
+                    <label for="">Digite seu nome</label>
+                    <span>Digite seu nome</span>
+                  </div>
+                  <div class="input-container">
+                    <input type="email" name="email" class="input" />
+                    <label for="">E-mail</label>
+                    <span>E-mail</span>
+                  </div>
+                  <div class="input-container">
+                    <input type="phone" name="telefone" class="input" />
+                    <label for="">Número de telefone</label>
+                    <span>Número de telefone</span>
+                  </div>
+                  <div class="input-container textarea">
+                    <textarea name="mensagem" class="input"></textarea>
+                    <label for="">Mensagem</label>
+                    <span>Mensagem</span>
+                  </div>
+                  <button type="button" id="enviar">
+                    Enviar
+                    <i class="fas fa-paper-plane"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+    </section>
+    <!-- FIM SEÇÃO CONTATO -->
+
+    <!-- INICIO FOOTER (RODAPÉ) -->
+    <footer class="footer">
+        <div class="container-footer">
+            Copyright &copy; 2024 - Desenvolvido por: Rafael Matos
+            <p class="footer-p">Projeto feito para fins de estudos</p>
+            <a href="#" class="logo">ME</a>
+        </div>
+    </footer>    
+    <!-- FIM FOOTER (RODAPÉ) -->
+
+    <!-- SWEETALERT2 BIBLIOTECA -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <!-- SCRIPT CUSTOMIZADO -->
+    <script src="./src/js/index.js"></script>
+    
+</body>
+
+</html>

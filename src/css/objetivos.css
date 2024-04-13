@@ -1,0 +1,100 @@
+.objetivos {
+    position: relative;
+    background: linear-gradient(to right, #2a042e, #b319cb, #4d019a);
+    background-size: 180% 180%;
+    animation: gradient-animation 12s ease infinite;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 2px solid #fff;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.objetivos .titulo {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    font-weight: bold;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.8);
+}
+
+.accordion {
+    width: 100%;
+}
+
+.accordion .accordion-bg {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.accordion .accordion-bg .accordion-header {
+    position: relative;
+    padding: 10px 40px 10px 10px;
+    background: linear-gradient(90deg, #220142, #4d0558, #000);
+    font-weight: bold;
+    color: #ed88fd;
+    cursor: url('../Imagens/kuromi1.png'), auto;
+}
+
+.accordion .accordion-bg .accordion-header i {
+    color: #f3aeff;
+}
+
+.accordion .accordion-bg .accordion-header i::before {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+    font-size: 1.5em;
+}
+
+.accordion .accordion-bg .accordion-conteudo{
+    position: relative;
+    background: linear-gradient(to right, #c9078f, #9602bb, #9702b4);
+    background-size: 180% 60%;
+    animation: gradient-animation 5s ease infinite;
+    font-weight: lighter;
+    color: #220142;
+    max-height: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    padding: 10px;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.accordion .accordion-bg.acc-active .accordion-conteudo {
+    padding: 10px;
+    max-height: 100%;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    opacity: 1;
+}
+
+.accordion-conteudo p {
+    color: #ffffff;
+}

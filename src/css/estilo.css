@@ -1,0 +1,286 @@
+/* ------- ESTILO PADRÃO DA PÁGINA ----- */
+html {
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+body {
+    cursor: url('../Imagens/kuromi2.png'), auto; 
+    background: linear-gradient(90deg, #e57dff, #9617aa, #490454);
+    background-size: 120% 120%;
+    font-family: "Dosis", sans-serif;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    cursor: url('../Imagens/kuromi1.png'), auto;
+}
+
+button {
+    cursor: url('../Imagens/kuromi1.png'), auto;
+}
+
+i {
+    cursor: url('../Imagens/kuromi1.png'), auto;
+}
+/* ------- CABEÇALHO MENU ----- */
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    line-height: 90px;
+    padding-inline: 9vw;
+    z-index: 100;
+    transition: 0.3s;
+    background-color: #740681;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    list-style-type: none;
+}
+
+.cabecalho .logo {
+    background-color: #EE82EE;
+    border-radius: 50%;
+    border: 2px dotted #4e0857;
+    width: 65px;
+    height: 65px;
+    text-decoration: underline;
+    text-align: center;
+    line-height: 55px;
+    font-family: "Dosis", sans-serif;
+    font-size: 32px;
+}
+
+.cabecalho a:hover .logo {
+    background-color: #52055e;
+    color: #FF00FF;
+    border: 2px solid #FF00FF;
+    transition: 0.3s;
+}
+
+.cabecalho .menu li a {
+    font-size: 1.4em;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    transition: 0.2s;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+.cabecalho .menu li a:hover {
+    background-color: #50006f;
+    color: #fff;
+    border-radius: 50px;
+    font-weight: bold;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.8);
+}
+
+.cabecalho .menu li a.menu-ativo {
+    background-color: #50006f;
+    color: #fff;
+    border-radius: 50px;
+    font-weight: bold;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.8);
+}
+
+.menu {
+    display: flex;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 20px; 
+}
+
+.menu ul li:last-child {
+    margin-right: 0;
+}
+
+.menu .nav_list{
+    list-style: none;
+    position: relative;
+}
+
+
+.nav-menu-btn{
+    display: none;
+}
+
+.nav-menu-btn:hover {
+    background: rgba(222, 123, 255, 0.6);
+    border-color: rgba(64, 3, 70, 0.8);
+    animation: pulse 1.4s infinite alternate;
+}
+
+.nav-menu-btn i {
+    font-size: 32px;
+}
+
+.nav-menu-btn i {
+    transition: transform 0.5s ease
+}
+
+.fa-xmark {
+    transform: rotate(180deg);
+}
+
+/* ------- SEÇÃO HOME ----- */
+
+.home {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    padding: 150px 0;
+    gap: 50px;
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    letter-spacing: 2px;
+    padding: 0 15px;
+    max-width: 50%;
+}
+
+
+.home .informacoes h1{
+    font-family: "Dosis", sans-serif;
+    font-size: 45px;
+    margin-bottom: 20px;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.8);
+}
+
+.home .informacoes p{
+    font-family: "Dosis", sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+.informacoes .big-circle {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #6c09579c, #ff92e725);
+    bottom: 50%;
+    right: 50%;
+    transform: translate(-100%, 2%);
+    z-index: -1;
+}
+
+.informacoes .redes-sociais {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.informacoes .redes-sociais a {
+    font-size: 1.8em;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #ff92e737, #6c09571c);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    border: 2px solid #fff;
+    padding: 1.7rem;
+}
+
+/* Ícone de mídia social */
+.informacoes .social-linkedin:hover {
+    color: #0077B5;
+    border: 2px solid #0077B5;
+    background: #ffffffd7;
+    box-shadow: 0 0 20px;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
+}
+
+.informacoes .social-instagram:hover {
+    color: #fff;
+    border: 2px solid #833AB4;
+    box-shadow: 0 0 20px;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
+    background-image: linear-gradient(to bottom right, #405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #FCAF45, #FFDC80, #777737);
+    background-size: 400% auto;
+    animation: gradientAnimation 5s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.informacoes .social-whatsapp:hover {
+    color: #00ff2a;
+    border: 2px solid #00ff2a;
+    background: rgba(6, 55, 19, 0.347);
+    box-shadow: 0 0 20px;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
+}
+
+.informacoes .social-youtube:hover {
+    color: #ff0000;
+    border: 2px solid #ff0000;
+    background: #ffffffd7;
+    box-shadow: 0 0 20px;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
+}
+
+.home .container-foto .foto {
+    max-width: 450px;
+    border-radius: 50%;
+}
+
+.home .container-foto img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.home .foto.sombra-interna {
+    background: linear-gradient(to right, #440460, #8A35C8, #ff00b3);
+    background-size: 180% 180%;
+    animation: gradient-animation 5s ease infinite;
+}

@@ -1,0 +1,320 @@
+
+/* ------- SEÇÃO HABILIDADES ----- */
+.container-habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; 
+    min-height: 100vh;
+}
+
+.habilidades {
+    position: relative;
+    background: linear-gradient(to right, #b319cb, #4d019a, #2a042e);
+    background-size: 180% 180%;
+    animation: gradient-animation 12s ease infinite;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 2px solid #fff;
+}
+
+.habilidades,
+.objetivos {
+    flex: 1;
+    width: calc(50% - 20px);
+    max-height: 100%;
+    overflow-y: hidden;
+    padding: 140px 0;
+}
+
+.habilidades .titulo {
+    padding-bottom: auto;
+}
+
+.habilidades .titulo {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    font-weight: bold;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.8);
+}
+
+.subtitulo {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #8000ff;
+    border: 2px dotted #fff;
+    border-radius: 50px;
+    padding: 20px;
+    max-width: 500px; /* Defina uma largura máxima para o contêiner */
+    margin-left: auto; /* Define a margem esquerda automática */
+    margin-right: auto; /* Define a margem direita automática */
+    margin-bottom: 50px;
+}
+
+.habilidades .container-habilidades {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.container-skills {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icons,
+.icons-opac {
+    height: 106px;
+    width: 106px;
+    background-color: #4d0558;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease 0.3s;
+    margin: 5px;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 1);
+}
+
+.icons i,
+.icons-opac i {
+    font-size: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease; /* Transição suave de escala */
+}
+
+/* Estilo de hover para ícones não ativos */
+.icons:not(.active) i:hover {
+    font-size: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease; /* Adicione uma transição suave */
+    animation: flip 2.5s infinite linear; /* Adicione a animação diretamente aqui */
+}
+
+@keyframes flip {
+    0% { transform: rotateY(0deg); }
+    50% { transform: rotateY(360deg); }
+    100% { transform: rotateY(360deg); }
+}
+
+/* Estilo para os ícones ativos com transformação de escala */
+.icons.active i {
+    transform: scale(1.1); /* Aumenta a escala em 20% */
+}
+
+.active {
+    border: 3px solid white; /* Adicione uma borda branca */
+}
+
+.active i,
+.active {
+    transform: scale(1.2); /* Ajuste o valor conforme necessário para a escala desejada */
+}
+
+/* Estilos para ícones com base no atributo data-info */
+.icons[data-info="HTML5"] i {
+    color: #e34f26; /* Cor para o ícone HTML5 */
+}
+
+.icons[data-info="CSS3"] i {
+    color: #1572b6; /* Cor para o ícone CSS3 */
+}
+
+.icons[data-info="BOOTSTRAP"] i {
+    color: #a749ff; /* Cor para o ícone Bootstrap */
+}
+
+.icons[data-info="JAVASCRIPT"] i {
+    color: #f7df1e; /* Cor para o ícone JavaScript */
+}
+
+.speech-bubble {
+    position: relative;
+    background: linear-gradient(180deg, #220142, #500554);
+    border-radius: 10px;
+    width: 45rem;
+    height: auto;
+    padding-bottom: 25px;
+    box-shadow: 5px 5px 5px rgba(255, 0, 230, 0.7);
+    display: none;
+}
+
+/* Estilos globais para todos os casos */
+#speech-bubble h3 {
+    color: #ffffff;
+    font-size: 1.7em;
+    font-family: "Dosis", sans-serif;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+#speech-bubble p {
+    color: #d395ff;
+    font-size: 1em;
+    line-height: 1.5;
+    font-family: "Dosis", sans-serif;
+    font-weight: bold;
+    padding: 0 25px;
+    box-sizing: border-box; /* Garante que a largura total do elemento inclua o padding */
+}
+
+.speech-bubble .inside-icon.html5 {
+    color: #e34f26; /* Cor para o ícone HTML5 */
+}
+
+.speech-bubble .inside-icon.css3 {
+    color: #1572b6; /* Cor para o ícone CSS3 */
+}
+
+.speech-bubble .inside-icon.bootstrap {
+    color: #a749ff; /* Cor para o ícone Bootstrap */
+}
+
+.speech-bubble .inside-icon.javascript {
+    color: #f7df1e; /* Cor para o ícone JavaScript */
+}
+
+.icon-bottom-right {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 15px;
+    font-size: 3.7rem; /* ajuste conforme necessário para o tamanho do ícone */
+    color: #fff; /* cor do ícone */
+}
+
+/* Aplique a animação diretamente ao ícone */
+.inside-icon {
+    position: absolute; /* Posicione o ícone de forma absoluta dentro do speech-bubble */
+    top: 0; /* Alinhe o ícone na parte inferior */
+    right: 20px; /* Alinhe o ícone à direita */
+    transform-origin: center; /* Defina o ponto de origem da transformação como o centro */
+    animation: flip 1.8s infinite linear; /* Aplicar animação de rotação */
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 1);
+}
+
+@keyframes flip {
+    0% { transform: rotateY(0deg); }
+    50% { transform: rotateY(360deg); }
+    100% { transform: rotateY(360deg); }
+}
+
+/* --------- HABILIDADES AINDA NÃO APRENDIDAS ----------- */
+.icons-opac {
+    background-color: #dd00ff75; /* Altere a cor de fundo conforme necessário */
+    opacity: 0.3; /* Opacidade ajustada para 50% */
+}
+
+.icons-opac:not(.active) i:hover {
+    font-size: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.7); /* Aumenta a escala em 20% */
+}
+
+.icons-opac.active {
+    transform: scale(0.8);
+}
+
+.icons-opac.active i{
+    transform: scale(0.7);
+}
+
+.icons-opac[data-info="REACT"] i {
+    color: #61dafb; /* Cor para o ícone React */
+}
+
+.icons-opac[data-info="TYPESCRIPT"] i {
+    color: #3178c6; /* Cor para o ícone TypeScript */
+}
+
+.icons-opac[data-info="NODEJS"] i {
+    color: #3c873a; /* Cor para o ícone Node.js */
+}
+
+/* -- DENTRO DO BALÃO DE FALA -- */
+.speech-bubble-opac .inside-icon.react {
+    color: #0099c3; /* Cor para o ícone React */
+}
+
+.speech-bubble-opac .inside-icon.typescript {
+    color: #3178c6; /* Cor para o ícone TypeScript */
+}
+
+.speech-bubble-opac .inside-icon.nodejs {
+    color: #3c873a; /* Cor para o ícone Node.js */
+}
+
+.speech-bubble-opac {
+    position: relative;
+    text-align: start;
+    background: linear-gradient(340deg, #e085ff, #c7e2ff); /* Azul claro */
+    border-radius: 10px;
+    width: 45rem;
+    height: auto;
+    padding-bottom: 25px;
+    box-shadow: 5px 5px 5px rgba(220, 176, 232, 0.5);
+    display: none;
+}
+
+/* Estilos globais para todos os casos */
+#speech-bubble-opac h3 {
+    display: inline-block;
+    text-align: center;
+    color: #000000;
+    font-size: 1.7em;
+    font-family: "Dosis", sans-serif;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+#speech-bubble-opac h4 {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    vertical-align: top;
+    padding: 25px; 
+    margin-top: 10px;
+    font-family: "Dosis", sans-serif;
+    font-size: 22px;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    color: #ff0000; 
+    margin-left: 10px; 
+    text-align: center;
+}
+
+#speech-bubble-opac h4 i {
+    margin-left: 5px; /* Espaço entre o ícone e o texto */
+    text-align: center;
+}
+
+#speech-bubble-opac p {
+    color: #280329;
+    text-align: start;
+    font-size: 1em;
+    line-height: 1.5;
+    font-family: "Dosis", sans-serif;
+    font-weight: bold;
+    padding: 0 25px;
+    box-sizing: border-box;
+}

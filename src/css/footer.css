@@ -1,0 +1,54 @@
+.footer {
+    background-color: #740681; 
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.5);
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.footer .container-footer {
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 1.3em;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+    position: relative; /* Adicionado */
+}
+
+.container-footer .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EE82EE;
+    border-radius: 50%;
+    border: 2px dotted #4e0857;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-decoration: underline;
+    text-align: center;
+    font-family: "Dosis", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    bottom: -75px;
+    transform: translateX(-50%);
+}
+
+.container-footer .logo:hover {
+    background-color: #52055e;
+    color: #FF00FF;
+    border: 2px solid #FF00FF;
+    transition: 0.3s;
+}
+
+.footer-p {
+    margin: 15px;
+    color: #f3d3ff;
+    font-size: 0.5em;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+}

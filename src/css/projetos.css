@@ -1,0 +1,111 @@
+/* ------- SEÇÃO PROJETOS ----- */
+
+.projetos {
+    padding: 70px 0 70px;
+}
+
+.projetos .titulo {
+    text-align: center;
+    padding: 60px 0;
+    font-size: 45px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.8);
+}
+
+.projetos .container-projetos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.projetos .projeto {
+    max-width: 260px;
+    max-height: 500px;
+    position: relative;
+    display: none;
+}
+
+.projetos .projeto.ativo {
+    display: block;
+}
+
+.projetos .projeto img {
+    height: 100%;
+    border-radius: 20px;
+}
+
+.projetos .projeto h3 {
+    background-color: #210435;
+    width: 100%;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+.projetos .projeto .informacoes-projeto {
+    background-color: #8A35C8;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    font-weight: 600;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 20px;
+}
+
+.projetos .container-projetos .projeto:hover .informacoes-projeto {
+    opacity: 0.7;
+    background-color: #000;
+}
+
+.projetos .btn-mostrar-projetos {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 3px solid #ff62e0;
+    color: #fff;
+    border-radius: 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    padding: 15px;
+    font-size: 1.3em;
+    font-weight: 600;
+    font-family: "Dosis", sans-serif;
+    transition: transform 0.7s ease;
+    transition: background 1.3s ease;
+}
+
+.projetos .btn-mostrar-projetos:hover {
+    background-color: #530762;
+    color: #ffc9f1;
+    background-image: linear-gradient(to right, transparent 50%, #9100ba 50%);
+    background-position: 100%;
+    background-size: 200% 100%;
+}
+
+.projetos .btn-mostrar-projetos.remove {
+    display: none;
+}
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+  }
